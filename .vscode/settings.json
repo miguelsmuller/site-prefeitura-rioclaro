@@ -28,4 +28,5 @@
     "package-lock.json": true,
     "www": true
   },
+  "angular.enable-strict-mode-prompt": false,
 }

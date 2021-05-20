@@ -8,7 +8,7 @@
   @apply xl:pl-44;
 
   &>li{
-    @apply w-full px-2 pt-4 pb-3 border-b-4 border-transparent;
+    @apply w-full px-2 pt-4 pb-3 border-b-4 border-transparent transition duration-500 ease-in-out;
     @apply sm:w-2/5;
     @apply md:w-auto;
 

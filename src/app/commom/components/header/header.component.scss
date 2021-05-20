@@ -1,0 +1,25 @@
+:host{
+  display: block;
+}
+
+.menu-style-behavior {
+  @apply w-full flex-row flex-wrap justify-between gap-2 py-2 my-2 border-t border-elephant-600 border-opacity-90;
+  @apply md:w-auto md:flex-nowrap md:justify-start  md:py-0 md:my-0 md:pl-0 md:border-t-0;
+  @apply xl:pl-44;
+
+  &>li{
+    @apply w-full px-2 pt-4 pb-3 border-b-4 border-transparent;
+    @apply sm:w-2/5;
+    @apply md:w-auto;
+
+    &:hover{
+      @apply bg-elephant-400 border-transparent rounded-sm;
+      @apply md:bg-transparent md:border-fruit-salad-500;
+    }
+
+    &.active{
+      @apply bg-elephant-400 border-transparent rounded-sm;
+      @apply md:bg-transparent md:border-fruit-salad-500;
+    }
+  }
+}

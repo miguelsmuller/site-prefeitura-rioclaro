@@ -15,7 +15,7 @@ Implementation of the UI redesign that was presented at [**Behance**](https://ww
 
 ## **TO-DO**
 - [x] Base of site 
-- [ ] Basic Components
+- [x] Basic Components
 - [ ] Page - Home
 - [ ] Page - Content
 - [ ] Page - Structure 

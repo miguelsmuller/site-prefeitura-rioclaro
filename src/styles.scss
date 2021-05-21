@@ -5,5 +5,13 @@
 @import 'tailwindcss/utilities';
 
 .button-green{
-  @apply flex-1 px-6 py-4 rounded text-sm font-semibold border-transparent bg-fruit-salad-500 text-white hover:bg-fruit-salad-600 focus:bg-fruit-salad-600 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fruit-salad-600;
+  @apply flex-1 px-6 py-4 rounded text-sm font-semibold border-transparent bg-fruit-salad-500 text-white border transition duration-300 ease-in-out;
+
+  &:hover{
+    @apply hover:bg-fruit-salad-600;
+  }
+
+  &:focus{
+    @apply  focus:outline-none focus:bg-fruit-salad-600 focus:ring-2 focus:ring-offset-2 focus:ring-fruit-salad-600;
+  }
 }

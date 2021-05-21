@@ -1,5 +1,5 @@
 :host{
-    display:block
+  display:block
 }
 
 .search-group{
@@ -9,15 +9,15 @@
     @apply flex flex-row items-stretch bg-elephant-500;
 
     svg{
-      @apply w-10 p-2;
+      @apply w-10 p-2 flex-shrink-0;
     }
 
     input{
-      @apply flex-grow text-xl text-center bg-elephant-500 border-0 outline-none focus:outline-none focus:ring-0;
+      @apply flex-1 min-w-0	text-xl text-center bg-elephant-500 border-0 outline-none focus:outline-none focus:ring-0;
     }
 
     button{
-      @apply px-6 font-semibold bg-elephant-700 transition duration-300 ease-in-out;
+      @apply px-6 flex-shrink-0 font-semibold bg-elephant-700 transition duration-300 ease-in-out;
 
       &:hover{
         @apply hover:bg-elephant-900;

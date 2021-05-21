@@ -106,8 +106,8 @@ Provisionally while the site is not in production the depoly will be done on git
 <br>
 
 ## **CHANGELOG**  
-= **2.0.0 - 14/11/2020** =  
-New Version - 2020
+= **1.1.0 - 19/05/2021** =  
+New version using Angular
 
-= **1.0.0 - 26/09/2013** =  
-First version
+= **1.0.0 - 20/05/2019** =  
+First version in static pattern

@@ -8,6 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.grid-image{
+  -webkit-column-count: 4;
+  -moz-column-count:4;
+  column-count: 4;
+}
+
 .button-green{
   @apply flex-1 px-6 py-2 rounded text-sm font-semibold border-transparent bg-fruit-salad-500 text-white border transition duration-300 ease-in-out;
 

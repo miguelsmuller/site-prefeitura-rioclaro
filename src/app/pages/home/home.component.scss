@@ -5,14 +5,14 @@
 .grid{
   div{
     a{
-      @apply h-full w-full flex flex-col justify-around sm:justify-between p-4 flex-none text-right	rounded-md overflow-hidden border border-elephant-200 bg-white transition duration-300 ease-in-out;
+      @apply h-full w-full flex flex-col justify-around sm:justify-between p-4 flex-none text-right	rounded-md overflow-hidden shadow-md border border-elephant-300 bg-white transition duration-300 ease-in-out;
 
       svg{
         @apply transition duration-200 ease-in-out;
       }
 
       &:hover{
-        @apply hover:border-elephant-300 hover:shadow-sm;
+        @apply hover:border-elephant-400;
 
         svg{
           @apply transform scale-105 rotate-3;

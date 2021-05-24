@@ -16,6 +16,10 @@ module.exports = {
       ...defaultTheme.screens,
       md: '770px',
     },
+    fontSize: {
+      ...defaultTheme.fontSize,
+      '1xl': '1.40rem',
+    },
     extend: {
       colors: {
         'gray': defaultColors.blueGray,

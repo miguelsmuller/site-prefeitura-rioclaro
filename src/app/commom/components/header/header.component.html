@@ -67,7 +67,7 @@
 
       <div class="w-full md:w-auto sm:flex-0 md:order-last flex flex-row justify-between md:justify-end">
         <ul class="md:flex flex-col md:flex-row gap-1 md:pl-0 xl:pl-44">
-          <li class="px-4 pt-4 pb-3 border-b-4 border-fruit-salad-500 bg-fruit-salad-500"><a href="#">Portal da Transparência</a></li>
+          <li class="px-4 pt-4 pb-3 border-b-4 border-fruit-salad-500 bg-fruit-salad-500"><a [routerLink]="['/content']">Portal da Transparência</a></li>
         </ul>
 
         <button type="button" (click)="toggleMenu()" class="flex items-center md:hidden p-2 rounded text-sm font-semibold border-transparent focus:outline-none">
@@ -81,12 +81,12 @@
       </div>
 
       <ul [ngClass]="{'hidden': !menuShow, 'flex': menuShow}" class="md:flex menu-style-behavior">
-        <li class="active"><a href="#">Inicio</a></li>
-        <li><a href="#">Cidade</a></li>
-        <li><a href="#">Governo, Secretarias e Órgãos</a></li>
-        <li><a href="#">Serviços e Utilidades</a></li>
-        <li><a href="#">Notícias</a></li>
-        <li><a href="#">Ouvidoria</a></li>
+        <li class="active"><a [routerLink]="['/content']">Inicio</a></li>
+        <li><a [routerLink]="['/content']">Cidade</a></li>
+        <li><a [routerLink]="['/content']">Governo, Secretarias e Órgãos</a></li>
+        <li><a [routerLink]="['/content']">Serviços e Utilidades</a></li>
+        <li><a [routerLink]="['/content']">Notícias</a></li>
+        <li><a [routerLink]="['/content']">Ouvidoria</a></li>
       </ul>
     </nav>
   </div>

@@ -4,8 +4,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .button-green{
-  @apply flex-1 px-6 py-4 rounded text-sm font-semibold border-transparent bg-fruit-salad-500 text-white border transition duration-300 ease-in-out;
+  @apply flex-1 px-6 py-2 rounded text-sm font-semibold border-transparent bg-fruit-salad-500 text-white border transition duration-300 ease-in-out;
 
   &:hover{
     @apply hover:bg-fruit-salad-600;

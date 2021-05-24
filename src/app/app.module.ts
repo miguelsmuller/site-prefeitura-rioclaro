@@ -13,6 +13,7 @@ import { HomeSearchComponent } from './commom/features/home-search/home-search.c
 import { HomeNewsComponent } from './commom/features/home-news/home-news.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
+import { PostComponent } from './pages/post/post.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContentComponent } from './pages/content/content.component';
     HomeNewsComponent,
     HomeComponent,
     ContentComponent,
+    PostComponent,
   ],
   imports: [
     BrowserModule,

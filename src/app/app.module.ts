@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { NgxPictureModule, CLOUDINARY_CONFIG } from 'ngx-picture';
+
 import { HeaderComponent } from './commom/components/header/header.component';
 import { FooterComponent } from './commom/components/footer/footer.component';
 import { HomeSearchComponent } from './commom/features/home-search/home-search.component';
@@ -30,7 +32,8 @@ import { PostComponent } from './pages/post/post.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPictureModule.forRoot(CLOUDINARY_CONFIG)
     //MaterialModule,
   ],
   providers: [],

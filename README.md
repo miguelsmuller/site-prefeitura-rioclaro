@@ -5,7 +5,7 @@
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/miguelsmuller/pmrc-site/master?style=flat-square)
 
 ## **OVERVIEW**
-Implementation of the UI redesign that was presented at [**Behance**](https://www.behance.net/gallery/80414855/Redesign-Rio-Claro-City-Hall-Website) developed for study purposes for Rio Claro City Hall in the State of Rio Janeiro. The original site done in [**WordPress**](https://wordpress.org/) and is online at [**rioclaro.rj.gov.br**](https://rioclaro.rj.gov.br/) and  the new concept being developed in **[Angular](https://angular.io/)**.
+Implementation of the UI redesign that was presented at [**Behance**](https://www.behance.net/gallery/80414855/Redesign-Rio-Claro-City-Hall-Website) developed for study purposes for Rio Claro City Hall in the State of Rio Janeiro. The original site done in [**WordPress**](https://wordpress.org/) and is online at [**rioclaro.rj.gov.br**](https://rioclaro.rj.gov.br/) and  the new concept being developed in **[Angular](https://angular.io/)** and you can see the redesign version [**here**](https://miguelsmuller.github.io/pmrc-site/).
 
 **Angular** which is an application design framework and development platform for creating efficient and sophisticated single-page apps. It is for building the application interface using HTML, CSS and, mainly, JavaScript, created by Google's developers and has some basic elements that make this construction interesting, within them we can highlight the components, templates, directives, routing, modules, services, dependency injection and infrastructure tools that automate tasks, such as executing the unit tests of an application. 
 
@@ -17,12 +17,12 @@ Implementation of the UI redesign that was presented at [**Behance**](https://ww
 - [x] Base of site 
 - [x] Basic Components
 - [x] Page - Home
-- [ ] Page - Content
+- [x] Page - Content
 - [ ] Page - Structure 
-- [ ] Page - News
+- [x] Page - News
 - [ ] Page - Contact
 - [ ] Micro interactions
-- [ ] Improve image efficiency - https://web.dev/uses-optimized-images
+- [x] Improve image efficiency - https://web.dev/uses-optimized-images
 
 ## **DOC CONTENT** 
 * [Project Requirements](#project-requirements)
@@ -91,9 +91,9 @@ Before sending your collaboration, check your code and the conventions adopted i
 
 ## **DEPLOY**  
 Provisionally while the site is not in production the depoly will be done on github pages for being a free and easy to use alternative to host our website.
-- Generate production version with -  **`$ npm run build`**
-  - A folder with the name test will be created in the same directory as the current project 
-- Access the created folder
+- Generate production version with -  **`$ npm run build:prod`**
+  - A folder will be created in the same directory as the current project 
+- Access the created folder **`$ cd ./dist/pmrc-site`**
 - Init git with: **`$ git init`**
 - Add a origin with: **`$ git remote add origin git@github.com:miguelsmuller/pmrc-site.git`**
 - Create a branch gh-pages with: **`$ git checkout -b gh-pages`**

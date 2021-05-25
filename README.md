@@ -13,17 +13,6 @@ Implementation of the UI redesign that was presented at [**Behance**](https://ww
 - **License:** Proprietary - Private Use - All rights reserved. 
 - **Available for consultation and study only**
 
-## **TO-DO**
-- [x] Base of site 
-- [x] Basic Components
-- [x] Page - Home
-- [x] Page - Content
-- [ ] Page - Structure 
-- [x] Page - News
-- [ ] Page - Contact
-- [ ] Micro interactions
-- [x] Improve image efficiency - https://web.dev/uses-optimized-images
-
 ## **DOC CONTENT** 
 * [Project Requirements](#project-requirements)
 * [Running Locally](#running-locally)

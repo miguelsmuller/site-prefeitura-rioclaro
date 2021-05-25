@@ -8,6 +8,8 @@
   // "files.autoSave": "afterDelay",
   // "files.autoSaveDelay": 3000,
 
+  "css.validate": false,
+
   "prettier.tabWidth": 2,
   "prettier.singleQuote": true,
   "prettier.useTabs": false,

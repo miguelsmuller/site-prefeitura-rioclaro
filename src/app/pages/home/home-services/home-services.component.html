@@ -1,0 +1,13 @@
+<div class="grid-services" @appear>
+  <div class="grid-services-item" *ngFor="let service of services">
+    <a [routerLink]="[service.path]">
+      <div class="card">
+        <div class="card-title">
+          <svg viewBox="0 0 24 24" stroke="none" fill="currentColor" [innerHTML]="service.icon | safe"></svg>
+          <h2 class="text-lg font-bold leading-snug">{{ service.title }}</h2>
+        </div>
+        <p class="card-description">{{ service.description }}</p>
+      </div>
+    </a>
+  </div>
+</div>

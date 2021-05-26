@@ -1,0 +1,57 @@
+:host{
+  display: block;
+  @apply bg-elephant-500 text-gray-50;
+}
+
+section{
+  @apply container mx-auto w-full px-6;
+  @apply flex flex-col;
+  @apply py-12;
+}
+
+/* # spotlight title
+================================================== */
+.spotlight-title{
+  @apply flex flex-col items-start;
+
+  h3{
+    @apply font-light text-2xl uppercase;
+  }
+  h4{
+    @apply font-bold text-3xl uppercase;
+  }
+}
+
+/* # spotlight information
+================================================== */
+.spotlight-information{
+  @apply flex flex-wrap items-center justify-center;
+  @apply py-8 gap-y-8;
+}
+.spotlight-information-meta{
+  @apply w-full md:w-4/12;
+  li{
+    @apply flex flex-row items-center justify-items-start py-2;
+  }
+}
+.spotlight-information-description{
+  @apply w-full md:w-8/12;
+  @apply text-justify	leading-relaxed space-y-4;
+}
+
+/* # spotlight action
+================================================== */
+.spotlight-actions{
+  @apply flex flex-row justify-center items-center;
+  @apply pt-8;
+}
+.spotlight-actions-grid{
+  @apply flex flex-row flex-wrap items-stretch justify-center gap-6;
+  &>div{
+    @apply flex-1;
+
+    button{
+      @apply h-full w-full px-4 py-2;
+    }
+  }
+}

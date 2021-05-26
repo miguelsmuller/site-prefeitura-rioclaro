@@ -1,0 +1,32 @@
+:host{
+  display: block;
+  @apply container mx-auto w-full px-6 py-16
+}
+
+.grid-services{
+  @apply grid grid-cols-4 gap-8;
+  .grid-services-item{
+    @apply col-span-2 md:col-span-1 items-stretch;
+  }
+}
+
+.card{
+  @apply h-full w-full flex flex-col justify-around sm:justify-between p-4 flex-none text-right	rounded-md overflow-hidden shadow-sm border border-elephant-300 bg-white transition duration-300 ease-in-out;
+
+  .card-title{
+    @apply flex flex-row items-center justify-between pb-2
+  }
+  .card-description{
+    @apply text-fruit-salad-700;
+  }
+
+  svg{
+    @apply h-12 w-12 hidden sm:flex flex-shrink-0 transition duration-200 ease-in-out;
+  }
+
+  &:hover{
+    svg{
+      @apply transform scale-105 rotate-3;
+    }
+  }
+}

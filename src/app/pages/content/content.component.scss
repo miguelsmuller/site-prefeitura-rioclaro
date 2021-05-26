@@ -1,0 +1,26 @@
+:host{
+  display: block;
+}
+
+/* # post links
+================================================== */
+.post-links{
+  @apply flex flex-col;
+  @apply hidden;
+  @apply bg-white border border-elephant-300;
+  @apply overflow-hidden float-left rounded;
+  @apply w-full md:w-1/4;
+  @apply mb-4 md:mr-4 md:mt-2;
+
+  &>li{
+    @apply p-4 border-b border-elephant-300;
+
+    &:last-child{
+      @apply border-b-0;
+    }
+  }
+
+  a{
+    @apply block transition duration-200 ease-in-out transform hover:translate-x-1;
+  }
+}

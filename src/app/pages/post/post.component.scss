@@ -1,0 +1,38 @@
+:host{
+  display: block;
+}
+
+/* # post referenced
+================================================== */
+.post-referenced{
+  @apply container mx-auto w-full max-w-screen-lg;
+  @apply px-6 pt-6;
+  &>div{
+    @apply rounded-md shadow-md bg-white border border-elephant-300;
+    @apply text-xs font-bold;
+    @apply p-4;
+  }
+  span{
+    @apply font-light;
+  }
+}
+
+/* # post related
+================================================== */
+.post-related{
+  @apply container mx-auto w-full;
+  @apply px-6 pt-24;
+}
+
+/* # post coments
+================================================== */
+.post-comments{
+  @apply container mx-auto w-full max-w-screen-lg px-6 pt-24 pb-10;
+}
+.post-comments-inner{
+  @apply flex flex-col justify-between overflow-hidden;
+  @apply border border-elephant-300;
+  @apply transition duration-300 ease-in-out;
+  @apply rounded-md shadow-md bg-white;
+  @apply h-20 mt-6 p-6 pb-4;
+}

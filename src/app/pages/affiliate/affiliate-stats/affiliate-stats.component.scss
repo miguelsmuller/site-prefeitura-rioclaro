@@ -1,0 +1,31 @@
+:host{
+  display: block;
+}
+
+section{
+  @apply container mx-auto w-full overflow-hidden;
+}
+
+.grid-stats{
+  @apply flex flex-row flex-wrap justify-center items-stretch gap-4 md:gap-8;
+  @apply px-2 py-8 sm:py-16;
+
+  &>div{
+    @apply w-5/12 sm:w-3/12 lg:w-2/12;
+  }
+}
+
+.stats-card{
+  @apply flex flex-col justify-center;
+  @apply h-full overflow-hidden rounded-md;
+  @apply p-3 md:p-6;
+  @apply bg-elephant-500 text-gray-50;
+
+  h5{
+    @apply text-3xl sm:text-3xl xl:text-5xl font-bold mb-1;
+  }
+  p{
+    @apply font-bold;
+  }
+}
+

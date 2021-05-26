@@ -1,0 +1,149 @@
+/* # Default Fonts
+================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+/* # Global Configurantion ViewPort
+================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* # Default Button
+================================================== */
+.button-green{
+  @apply flex items-center justify-center px-8 py-4 rounded text-sm font-semibold border-transparent text-center bg-fruit-salad-700 text-white border transition duration-300 ease-in-out;
+
+  &:hover{
+    @apply hover:bg-fruit-salad-500;
+  }
+
+  &:focus{
+    @apply  focus:outline-none focus:bg-fruit-salad-600 focus:ring-2 focus:ring-offset-2 focus:ring-fruit-salad-600;
+  }
+}
+/* # title section
+================================================== */
+.title-section{
+  @apply relative;
+
+  h1{
+    @apply font-bold text-4xl;
+  }
+  span{
+    @apply bg-fruit-salad-500;
+    @apply w-16 h-1;
+    @apply absolute bottom-0 left-0;
+  }
+}
+
+/* # grid cards
+================================================== */
+.grid-cards{
+  @apply grid grid-cols-3;
+  @apply gap-6 py-6;
+
+  &>div{
+    @apply col-span-3 md:col-span-1 items-stretch;
+  }
+}
+.grid-cards-item{
+  @apply flex flex-col justify-between overflow-hidden ;
+  @apply border border-elephant-300;
+  @apply rounded-md shadow-md bg-white;
+  @apply h-full p-6 pb-4;
+  @apply transition duration-300 ease-in-out;
+
+  &>*:nth-child(1){
+    @apply relative block;
+  }
+  &>*:nth-child(2){
+    @apply flex-grow overflow-ellipsis;
+    @apply text-xl leading-6 font-bold;
+    @apply py-4;
+  }
+  &>*:nth-child(3){
+    @apply text-xs;
+  }
+}
+
+/* # post breadcrumb
+================================================== */
+.breadcrumb{
+  @apply container mx-auto w-full;
+  @apply px-6 py-6;
+  ol{
+    @apply list-none inline-flex overflow-hidden;
+    @apply w-full;
+    @apply truncate;
+
+    li:not(:last-child){
+      @apply flex items-center;
+    }
+
+    li:last-child{
+      @apply text-elephant-400;
+      @apply truncate;
+    }
+  }
+}
+
+/* # parallax
+================================================== */
+.parallax{
+  @apply py-4;
+  &>div{
+    @apply bg-fixed bg-center bg-no-repeat bg-cover;
+    height: 300px;
+
+  }
+}
+
+/* # post header
+================================================== */
+.post-header{
+  @apply container mx-auto w-full max-w-screen-lg;
+  @apply px-6 py-4;
+}
+.post-header-meta{
+  @apply flex flex-row flex-wrap items-center;
+  @apply gap-4 pt-4;
+  @apply text-xs;
+}
+.post-header-meta-date{
+  @apply pr-4;
+}
+.post-header-meta-category{
+  @apply flex items-center max-w-xs;
+  @apply pr-4;
+
+}
+.post-header-meta-comments{
+  @apply flex items-center max-w-xs;
+}
+.post-header-meta-category,
+.post-header-meta-comments{
+  svg{
+    @apply text-fruit-salad-500;
+    @apply flex-none h-5 w-5 mr-1;
+  }
+}
+
+
+/* # post content
+================================================== */
+.post-content{
+  @apply container mx-auto w-full max-w-screen-lg;
+  @apply px-6 py-4;
+}
+.post-content-gallery{
+  @apply gap-6;
+  column-count: 4;
+
+  &>div{
+    @apply inline-block box-content;
+    @apply bg-white rounded-lg shadow-md;
+    @apply border border-elephant-300;
+    @apply m-2 p-1;
+  }
+}

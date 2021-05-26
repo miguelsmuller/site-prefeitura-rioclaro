@@ -1,0 +1,51 @@
+:host {
+  display: block;
+  @apply pt-4;
+}
+
+footer {
+  &::before{
+    @apply h-56;
+    @apply border-b-4 border-fruit-salad-900;
+    @apply bg-no-repeat bg-left-bottom;
+    content: '';
+    display: block;
+    background-image: url('https://res.cloudinary.com/miguelsmuller/image/upload/v1621902123/pmrc-site/church-silhouette_rr0iwk.WebP');
+  }
+
+  .container-external {
+    @apply bg-elephant-500 text-gray-50;
+    @apply border-t-4 border-fruit-salad-500;
+
+    .container {
+      @apply container mx-auto w-full px-6;
+      @apply flex flex-row flex-wrap justify-between items-stretch gap-8;
+      @apply pt-10 pb-2 sm:pb-8;
+    }
+  }
+}
+
+.column-left {
+  @apply w-72;
+}
+.column-middle {
+  @apply block;
+}
+.column-right {
+  @apply flex-1 md:flex-initial flex flex-col justify-between;
+}
+
+.column-right-line-1 {
+  @apply flex flex-row justify-around items-stretch space-x-2 sm:space-x-4;
+}
+.column-right-line-2 {
+  @apply text-xs pt-6 text-center md:text-right;
+}
+
+.footer-navigation {
+  @apply space-y-2;
+
+  li {
+    @apply transition duration-200 ease-in-out transform hover:translate-x-1;
+  }
+}

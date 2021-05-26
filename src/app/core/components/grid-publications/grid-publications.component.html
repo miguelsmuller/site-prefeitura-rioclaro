@@ -1,0 +1,34 @@
+<div class="grid-cards">
+  <ng-container *ngIf="dataSource$ | async as publications; else elseTemplate">
+    <div *ngFor="let publication of publications">
+      <a [routerLink]="['/affiliate']">
+        <article class="grid-cards-item" [@appear]>
+          <header>
+            <p class="font-bold">Categoria</p>
+            <span class="absolute w-16 h-1 bg-fruit-salad-500 botton-0 left-0"></span>
+          </header>
+
+          <p [innerHTML]="publication.title.rendered | titlecase"></p>
+          <span>{{ publication.date | relativeTime }}</span>
+        </article>
+      </a>
+    </div>
+
+    <div class="wrap-load-more">
+      <button class="button-green">Carregar mais notícias</button>
+    </div>
+  </ng-container>
+</div>
+
+<ng-template #elseTemplate>
+  <div class="grid-news-items" *ngFor="let number of [1, 2, 3]">
+    <article class="grid-cards-item">
+      <header>
+        <picture><ngx-skeleton-loader></ngx-skeleton-loader></picture>
+      </header>
+
+      <p><ngx-skeleton-loader [theme]="{ height: '50px' }"></ngx-skeleton-loader></p>
+      <span><ngx-skeleton-loader></ngx-skeleton-loader></span>
+    </article>
+  </div>
+</ng-template>

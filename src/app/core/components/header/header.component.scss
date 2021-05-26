@@ -1,0 +1,64 @@
+:host{
+  display: block;
+}
+
+header{
+  @apply flex flex-col;
+
+  &>.line-header { /* linha com o conteudo do header */
+    @apply container mx-auto w-full px-6;
+    @apply relative flex flex-col sm:flex-row justify-between items-center;
+
+    .line-header-image { /* emblema da cidade de rio claro */
+      @apply w-20 md:w-24 xl:w-40;
+      @apply hidden md:block absolute;
+      @apply md:top-6 xl:top-4;
+    }
+
+    &>.line-header-title { /* titulo da pagina principal */
+      @apply max-w-full overflow-hidden;
+      @apply text-xl font-normal leading-none text-center sm:text-left;
+      @apply pt-6 sm:pt-10;
+      @apply pb-4 sm:pb-10;
+      @apply md:pl-28 xl:pl-44;
+
+      span{
+        @apply block text-6xl tracking-tighter font-extrabold uppercase;
+      }
+    }
+
+    &>.line-header-extra { /* conteudo extra do header */
+      @apply flex flex-col;
+      @apply items-center sm:items-end;
+      @apply font-bold text-center md:text-right;
+    }
+  }
+
+  &>.line-navigation { /* linha com o menu de navegação */
+    @apply bg-elephant-500 text-gray-50;
+  }
+}
+
+.mini-icon-behavior{
+  @apply mx-1 p-1 rounded-full bg-elephant-100 text-elephant-500 transition duration-300 ease-in-out;
+
+  &:hover{
+    @apply hover:bg-elephant-200 hover:text-elephant-500;
+  }
+
+  &:focus{
+    @apply focus:bg-elephant-700 focus:text-elephant-100 focus:outline-none focus:ring-2 focus:ring-elephant-100 focus:ring-offset-2 focus:ring-offset-elephant-700;
+  }
+}
+
+.mini-text-behavior{
+  @apply flex flex-row items-center gap-1 mt-6 mb-4 md:mb-0 py-2 px-3 rounded-full bg-elephant-100 text-elephant-500 transition duration-300 ease-in-out;
+
+  &:hover{
+    @apply hover:bg-elephant-200 hover:text-elephant-500;
+  }
+
+  &:focus{
+    @apply focus:bg-elephant-700 focus:text-elephant-100 focus:outline-none focus:ring-2 focus:ring-elephant-100 focus:ring-offset-2 focus:ring-offset-elephant-700;
+  }
+}

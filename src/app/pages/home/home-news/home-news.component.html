@@ -1,0 +1,36 @@
+<div class="grid-news">
+  <ng-container *ngIf="dataSource$ | async as publications; else elseTemplate">
+    <div class="grid-news-items" *ngFor="let publication of publications">
+      <div class="card" [@appear]>
+        <div class="relative">
+          <a href="#" class="card-category">Categoria</a>
+          <span class="absolute w-16 h-1 bg-fruit-salad-500 botton-0 left-0"></span>
+        </div>
+        <a class="card-title" [routerLink]="['/post']" [innerHTML]="publication.title.rendered | titlecase"></a>
+        <span class="card-date">{{ publication.date | relativeTime }}</span>
+      </div>
+    </div>
+  </ng-container>
+
+  <div class="grid-news-items md:order-first">
+    <div class="card-see-more">
+      <span class="text-2xl font-bold uppercase">Últimas Notícias</span>
+      <p class="pt-2 pb-4 md:pt-6 md:pb-12">
+        Fique atento nas nossas notícias e saiba tudo que acontece no nosso município
+      </p>
+      <button class="button-green">Ver mais notícias</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #elseTemplate>
+  <div class="grid-news-items" *ngFor="let number of [1, 2, 3]">
+    <div class="card">
+      <div class="relative">
+        <p class="card-category"><ngx-skeleton-loader></ngx-skeleton-loader></p>
+      </div>
+      <p class="card-title"><ngx-skeleton-loader [theme]="{ height: '50px' }"></ngx-skeleton-loader></p>
+      <span class="card-date"><ngx-skeleton-loader></ngx-skeleton-loader></span>
+    </div>
+  </div>
+</ng-template>

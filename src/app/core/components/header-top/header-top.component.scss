@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  @apply bg-gray-100 bg-opacity-20;
+  @apply border-b border-gray-200 border-opacity-95;
+}
+
+header {
+  @apply container mx-auto w-full px-6 py-2;
+  @apply flex justify-between flex-col md:flex-row;
+  @apply text-sm text-center font-bold;
+}
+
+ul.menu{
+  @apply flex flex-col md:flex-row gap-x-4;
+  @apply text-center;
+}

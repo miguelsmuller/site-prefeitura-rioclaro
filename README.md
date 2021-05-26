@@ -1,102 +1,87 @@
 # **Prefeitura Municipal de Rio Claro - RJ - Site**
-![Code quality](https://img.shields.io/scrutinizer/quality/g/miguelsmuller/pmrc-site/master?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/miguelsmuller/pmrc-site?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/miguelsmuller/pmrc-site?style=flat-square)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/miguelsmuller/pmrc-site/master?style=flat-square)
+![Code quality](https://img.shields.io/scrutinizer/quality/g/miguelsmuller/site-prefeitura-rioclaro/master?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/miguelsmuller/site-prefeitura-rioclaro?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/miguelsmuller/site-prefeitura-rioclaro?style=flat-square)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/miguelsmuller/site-prefeitura-rioclaro/master?style=flat-square)
 
-## **OVERVIEW**
+## **Overview**
 Implementation of the UI redesign that was presented at [**Behance**](https://www.behance.net/gallery/80414855/Redesign-Rio-Claro-City-Hall-Website) developed for study purposes for Rio Claro City Hall in the State of Rio Janeiro. The original site done in [**WordPress**](https://wordpress.org/) and is online at [**rioclaro.rj.gov.br**](https://rioclaro.rj.gov.br/) and  the new concept being developed in **[Angular](https://angular.io/)** and you can see the redesign version [**here**](https://miguelsmuller.github.io/pmrc-site/).
 
-**Angular** which is an application design framework and development platform for creating efficient and sophisticated single-page apps. It is for building the application interface using HTML, CSS and, mainly, JavaScript, created by Google's developers and has some basic elements that make this construction interesting, within them we can highlight the components, templates, directives, routing, modules, services, dependency injection and infrastructure tools that automate tasks, such as executing the unit tests of an application. 
-
-- **Version:** 1.0 
-- **License:** Proprietary - Private Use - All rights reserved. 
 - **Available for consultation and study only**
 
-## **DOC CONTENT** 
-* [Project Requirements](#project-requirements)
-* [Running Locally](#running-locally)
-* [Project Workflow](#project-workflow)   
-* [Contributing](#contributing)
-* [Deploy](#deploy)   
-* [Changelog](#changelog)  
+- Feature 1
+- Feature 2
+- Feature 3
+
+|[See Demonstration](https://prefeitura-rioclaro.web.app/) |
+|:---------------------------------------------------:|
 
 <br>
 
-# **DEVELOPMENT AND OPERATION**  
-## **PROJECT REQUIREMENTS**  
-### **INSTALL ALL DEPENDENCIES**
+### **Behance Case Study** 
+The redesign concept presented in this project was presented in
+[**Behance**](https://www.behance.net/gallery/80414855/Redesign-Rio-Claro-City-Hall-Website) 
+
+
+- **Available for consultation and study only**
+
+<br>
+
+### **DevTools Lighthouse Score** 
+![Score DevTools LightHouse](docs/score-devtools-lighthouse.png "Score DevTools LightHouse")
+
+<br>
+
+## **Project Requirements**  
 Make sure that you also have **[NodeJS](https://nodejs.org/)** and **[NPM](https://www.npmjs.com/)** installed on your computer.
-- **`$ node --version`** 
-- **`$ npm --version`** 
+- `$ node --version` and `$ npm --version`
 
-Also make sure you have **Angular CLI** and **Ionic CLI** installed globally on your machine.  
-- **`$ npm install -g @angular/cli @ionic/cli`**  
+<br/>
 
-Install dependencies of project with:  
-- **`$ npm install`**
+**Install dependencies** of project with:  
+- `$ npm install`
 
-<br>
+<br/>
 
-## **RUNNING LOCALLY**  
-Run te command  
-**`$ ng serve`**
+**Angular Cli** is already part of the development dependencies, so any cli functionality can be used with the prefix npx.
 
-<br>
+- `$ npx ng serve`
 
-## **PROJECT WORKFLOW**  
-This workflow uses two main branches to record the project's history. The **`master`** branch stores the official release history, and the **`develop`** branch serves as a resource integration branch.
+<br/>
 
-The branch **`master`** is the branch that runs in the production environment. All commits on the **`master`** branch must have a version number.
+**First Execution - Environment files**: In the first execution of the project, it is **essential** to create the environment files (_environment.ts_) in _/src/environments_ according to the model that follows inside the folder (_environment.exp.ts_).
 
-Each new resource must reside on its own branch and must start from the **`develop`** branch. When a feature is completed, it is merged back into **`develop`**. Resources should never interact directly with the master.
+<br/>
 
-The branch **`develop`** is the branch that runs in the test environment. It stores the latest features included in the projects and which are not yet able to enter the branch **`master`**. 
+## **Workflow**  
+**[WORKFLOW.md](WORKFLOW.md)** - This project uses the workflow pattern called `git flow`.
+- [Atlassian - Comparing Workflows](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
+- [Difference between workflows](https://www.zup.com.br/blog/git-workflow)
+- [Girflow Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
 
-<br>
+<br/>
 
-## **CONTRIBUTING**  
-#### **REPORTING PROBLEMS**  
-To report an issue, please [create a new pull request](https://github.com/miguelsmuller/pmrc-site/pulls).  
+## **Tests**  
+[Need to be implemented]
 
-#### **SENDING CODE**  
-Before sending your collaboration, check your code and the conventions adopted in the project and take the following steps:
+<br/>
 
-- **Always check the branch used**: **`$ git status`**
-- **Update your branch**: **`$ git pull`**
-- **Rebase your branch**: **`$ git rebase -i HEAD~N`**
-- **See the differences before committing**: **`$ git diff --cached`**
-- **Delete locally develop branch**: **`$ git branch -d develop`**
-- **Delete remotely develop branch**: **`$ git push origin --delete develop`**
-- **Recreate develop branch**: **`$ git checkout -b develop`**
+## **Deploy**  
+**[GITHUB ACTIONS](https://github.com/miguelsmuller/site-prefeitura-rioclaro/actions/workflows/push-to-gh-pages.yml)** - To deploy to a demonstration of project hosted in GitHub Pages.
 
-#### **IMPORTANT INFORMATION**  
-- Do not commit before running the project locally
-- See the changes implemented being carried out
-- And especially make sure that these changes work
-- **[Useful git commands](https://gist.github.com/leocomelli/2545add34e4fec21ec16)** 
+<br/>
+
+## **Contributing**  
+**[CONTRIBUTING.md](CONTRIBUTING.md)** - Specifications of how the contribution should be submitted
+
+<br/>
+
+## **Changelog**  
+**[CHANGELOG.md](CHANGELOG.md)** - Chronologically list of changes for each version of a project
 
 <br>
 
-## **DEPLOY**  
-Provisionally while the site is not in production the depoly will be done on github pages for being a free and easy to use alternative to host our website.
-- Generate production version with -  **`$ npm run build:prod`**
-  - A folder will be created in the same directory as the current project 
-- Access the created folder **`$ cd ./dist/pmrc-site`**
-- Init git with: **`$ git init`**
-- Add a origin with: **`$ git remote add origin git@github.com:miguelsmuller/pmrc-site.git`**
-- Create a branch gh-pages with: **`$ git checkout -b gh-pages`**
-- Add, Commit and Push with:
-  - **`$ git add --all`**
-  - **`$ git commit -m "Preview Site"`**
-  - **`$ git push -f -u origin gh-pages`**
-- See the result
+## **Screenshot**
+![Home](design/screenshot.jpeg "Title")
 
-<br>
 
-## **CHANGELOG**  
-= **1.1.0 - 19/05/2021** =  
-New version using Angular
-
-= **1.0.0 - 20/05/2019** =  
-First version in static pattern

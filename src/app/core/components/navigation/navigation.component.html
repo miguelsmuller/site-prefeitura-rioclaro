@@ -1,0 +1,20 @@
+<nav>
+  <div class="w-full md:w-auto sm:flex-0 md:order-last flex flex-row justify-between md:justify-end">
+    <ul class="md:flex flex-col md:flex-row gap-1 md:pl-0 xl:pl-44">
+      <li class="px-8 pt-4 pb-3 border-b-4 border-fruit-salad-700 bg-fruit-salad-700 text-white">
+        <a [routerLink]="['/content']">Boletim Oficial</a>
+      </li>
+    </ul>
+
+    <app-navigation-toogle [blnMenuShow]="blnMenuShow" (emtClick)="toggleMenu()"></app-navigation-toogle>
+  </div>
+
+  <ul [ngClass]="{ hidden: !blnMenuShow, flex: blnMenuShow }" class="md:flex navigation">
+    <li class="active"><a [routerLink]="['/']">Inicio</a></li>
+    <li><a [routerLink]="['/content']">Cidade</a></li>
+    <li><a [routerLink]="['/affiliate']">Governo, Secretarias e Órgãos</a></li>
+    <li><a [routerLink]="['/content']">Serviços e Utilidades</a></li>
+    <li><a [routerLink]="['/content']">Notícias</a></li>
+    <li><a [routerLink]="['/content']">Ouvidoria</a></li>
+  </ul>
+</nav>

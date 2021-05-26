@@ -1,0 +1,7 @@
+:host{
+  display: block;
+}
+
+.wrap-load-more{
+  @apply flex justify-center items-center py-10 col-span-3;
+}

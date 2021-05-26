@@ -1,28 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './pages/home/home.component';
-import { ContentComponent } from './pages/content/content.component';
-import { PostComponent } from './pages/post/post.component';
-
 const routes: Routes = [
-{
-  path: '',
-  redirectTo: '/home',
-  pathMatch: 'full'
-},{
-  path: 'home',
-  component: HomeComponent
-},{
-  path: 'content',
-  component: ContentComponent
-},{
-  path: 'post',
-  component: PostComponent
-}];
+  {
+    path: '',
+    loadChildren: () => import('./pages/home/home.module').then((m) => m.HomeModule),
+  },
+  {
+    path: 'content',
+    loadChildren: () => import('./pages/content/content.module').then((m) => m.ContentModule),
+  },
+  {
+    path: 'post',
+    loadChildren: () => import('./pages/post/post.module').then((m) => m.PostModule),
+  },
+  {
+    path: 'affiliate',
+    loadChildren: () => import('./pages/affiliate/affiliate.module').then((m) => m.AffiliateModule),
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

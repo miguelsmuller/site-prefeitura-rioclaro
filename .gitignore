@@ -44,3 +44,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Environments and Firebase Files
+# /src/firebase-messaging-sw.js
+.env
+/src/environments/**
+!/src/environments/environment.exp.ts

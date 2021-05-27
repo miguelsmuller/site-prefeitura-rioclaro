@@ -1,31 +1,32 @@
-<div class="container mx-auto w-full pt-8">
-  <div class="pb-2">
-    <ol class="list-none p-0 inline-flex">
-      <li class="flex items-center">
-        <a [routerLink]="['/content']">Início</a>
-        <svg class="fill-current w-3 h-3 mx-3" viewBox="0 0 320 512">
-          <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-        </svg>
-      </li>
-      <li class="flex items-center">
-        <a [routerLink]="['/content']">Conteúdos</a>
-        <svg class="fill-current w-3 h-3 mx-3" viewBox="0 0 320 512">
-          <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-        </svg>
-      </li>
-      <li>
-        <span href="#" class="text-elephant-400" aria-current="page">Título de uma página de conteúdo</span>
-      </li>
-    </ol>
-  </div>
+<div class="container mx-auto w-full px-2 pt-8">
+  <ol class="list-none w-full inline-flex overflow-hidden truncate">
+    <li class="flex items-center ">
+      <a [routerLink]="['/content']">Início</a>
+      <svg class="fill-current w-3 h-3 mx-2" viewBox="0 0 320 512">
+        <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
+      </svg>
+    </li>
+    <li class="flex items-center">
+      <a [routerLink]="['/content']">Conteúdos</a>
+      <svg class="fill-current w-3 h-3 mx-2" viewBox="0 0 320 512">
+        <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
+      </svg>
+    </li>
+    <li class="text-elephant-400 truncate">
+      <span>Título de uma página de conteúdo</span>
+    </li>
+  </ol>
+</div>
+
+<div class="container mx-auto w-full px-2 pt-2">
   <div class="relative pt-4 text-xs">
-    <p class="font-bold text-3xl">Título de uma página de conteúdo</p>
+    <h1 class="font-bold text-3xl">Título de uma página de conteúdo</h1>
     <span class="absolute w-16 h-1 bg-fruit-salad-500 botton-0 left-0"></span>
     <p class="text-xs font-light pt-4">Última Atualização: 10 de Outubro de 2019</p>
   </div>
 </div>
 
-<div class="pt-8">
+<div class="pt-4">
   <div class="bg-fixed bg-center bg-no-repeat bg-cover" style="height:330px; background-image:url('https://res.cloudinary.com/miguelsmuller/image/upload/v1621902134/pmrc-site/background-praca_bbv2xc.WebP');"></div>
 </div>
 

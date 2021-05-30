@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-//import { MaterialModule } from './material.module';
+import { MaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -33,8 +33,8 @@ import { PostComponent } from './pages/post/post.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MaterialModule,
     NgxPictureModule.forRoot(CLOUDINARY_CONFIG)
-    //MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

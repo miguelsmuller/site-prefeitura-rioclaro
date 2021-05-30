@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'theme/fonts';
+@import 'theme/tailwind';
+@import 'theme/angular';
 
 html {
   scroll-behavior: smooth;

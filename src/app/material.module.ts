@@ -1,4 +1,3 @@
-import { NgModule } from '@angular/core';
 // import { MatAutocompleteModule } from '@angular/material/autocomplete';
 // import { MatBadgeModule } from '@angular/material/badge';
 // import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
@@ -21,6 +20,8 @@ import { NgModule } from '@angular/core';
 // import { MatDividerModule } from '@angular/material/divider';
 // import { MatButtonModule } from '@angular/material/button';
 // import { MatListModule } from '@angular/material/list';
+//import { MatDatepickerModule } from '@angular/material/datepicker';
+import { NgModule } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -33,7 +34,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
-//import { MatDatepickerModule } from '@angular/material/datepicker';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -63,6 +63,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     // MatDividerModule,
     // MatButtonModule,
     // MatListModule,
+    //MatDatepickerModule,
     MatFormFieldModule,
     MatButtonToggleModule,
     MatDialogModule,
@@ -75,8 +76,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSnackBarModule,
     MatTabsModule,
     MatTooltipModule,
-    //MatDatepickerModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MaterialModule { }

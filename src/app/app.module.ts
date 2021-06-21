@@ -34,9 +34,9 @@ import { PostComponent } from './pages/post/post.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModule,
-    NgxPictureModule.forRoot(CLOUDINARY_CONFIG)
+    NgxPictureModule.forRoot(CLOUDINARY_CONFIG),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

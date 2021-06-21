@@ -1,24 +1,26 @@
 import { Component } from '@angular/core';
-import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from "@angular/router";
+import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   showLoadingIndicator = true;
 
-  constructor(private _router: Router){
+  constructor(private _router: Router) {
     this._router.events.subscribe((routerEvent: Event) => {
       if (routerEvent instanceof NavigationStart) {
         this.showLoadingIndicator = true;
       }
 
-      if (routerEvent instanceof NavigationEnd ||
+      if (
+        routerEvent instanceof NavigationEnd ||
         routerEvent instanceof NavigationCancel ||
-        routerEvent instanceof NavigationError ) {
+        routerEvent instanceof NavigationError
+      ) {
         this.showLoadingIndicator = false;
       }
-    })
+    });
   }
 }

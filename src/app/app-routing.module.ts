@@ -6,23 +6,27 @@ import { ContentComponent } from './pages/content/content.component';
 import { PostComponent } from './pages/post/post.component';
 
 const routes: Routes = [
-{
-  path: '',
-  redirectTo: '/home',
-  pathMatch: 'full'
-},{
-  path: 'home',
-  component: HomeComponent
-},{
-  path: 'content',
-  component: ContentComponent
-},{
-  path: 'post',
-  component: PostComponent
-}];
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'content',
+    component: ContentComponent,
+  },
+  {
+    path: 'post',
+    component: PostComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

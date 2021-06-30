@@ -3,7 +3,8 @@
   "ignorePatterns": [
     "projects/**/*",
     "dist",
-    "coverage"
+    "coverage",
+    "tailwind.config.js"
   ],
   "parserOptions": {
     "project": [

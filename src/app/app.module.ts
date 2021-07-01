@@ -11,16 +11,16 @@ import { NgxPictureModule, CLOUDINARY_CONFIG } from 'ngx-picture';
 import { AppComponent } from './app.component';
 import { HeaderTopComponent } from './common/components/header-top/header-top.component';
 import { HeaderComponent } from './common/components/header/header.component';
+import { NavigationComponent } from './common/components/navigation/navigation.component';
+import { NavigationToogleComponent } from './common/components/navigation/navigation-toogle/navigation-toogle.component';
 import { FooterComponent } from './common/components/footer/footer.component';
+import { FooterSocialComponent } from './common/components/footer/footer-social/footer-social.component';
 import { HomeSearchComponent } from './common/features/home-search/home-search.component';
 import { HomeNewsComponent } from './common/features/home-news/home-news.component';
 
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
 import { PostComponent } from './pages/post/post.component';
-import { NavigationComponent } from './common/components/navigation/navigation.component';
-import { NavigationToogleComponent } from './common/components/navigation/navigation-toogle/navigation-toogle.component';
-import { FooterSocialComponent } from './common/components/footer/footer-social/footer-social.component';
 import { AffiliateComponent } from './pages/affiliate/affiliate.component';
 
 @NgModule({
@@ -28,15 +28,15 @@ import { AffiliateComponent } from './pages/affiliate/affiliate.component';
     AppComponent,
     HeaderTopComponent,
     HeaderComponent,
+    NavigationComponent,
+    NavigationToogleComponent,
     FooterComponent,
+    FooterSocialComponent,
     HomeSearchComponent,
     HomeNewsComponent,
     HomeComponent,
     ContentComponent,
     PostComponent,
-    NavigationComponent,
-    NavigationToogleComponent,
-    FooterSocialComponent,
     AffiliateComponent,
   ],
   imports: [

@@ -1,0 +1,161 @@
+:host{
+  display: block;
+}
+
+/* # post topic
+================================================== */
+.post-topic{
+  @apply relative pt-4 ;
+
+  h1{
+    @apply font-bold text-3xl;
+  }
+  span{
+    @apply bg-fruit-salad-500;
+    @apply w-16 h-1;
+    @apply absolute bottom-0 left-0;
+  }
+}
+
+/* # post breadcrumb
+================================================== */
+.post-breadcrumb{
+  @apply container mx-auto w-full;
+  @apply px-2 pt-8;
+  ol{
+    @apply list-none inline-flex overflow-hidden;
+    @apply w-full;
+    @apply truncate;
+
+    li:not(:last-child){
+      @apply flex items-center;
+    }
+
+    li:last-child{
+      @apply text-elephant-400;
+      @apply truncate;
+    }
+  }
+}
+
+/* # post header
+================================================== */
+.post-header{
+  @apply container mx-auto w-full;
+  @apply px-2 pt-2;
+}
+.post-header-meta{
+  @apply flex flex-row flex-wrap items-center;
+  @apply gap-4 pt-4;
+  @apply text-xs;
+}
+.post-header-meta-date{
+  @apply font-light;
+  @apply pr-4;
+}
+.post-header-meta-category{
+  @apply flex items-center max-w-xs;
+  @apply pr-4;
+
+}
+.post-header-meta-comments{
+  @apply flex items-center max-w-xs;
+}
+.post-header-meta-category,
+.post-header-meta-comments{
+  svg{
+    @apply text-fruit-salad-500;
+    @apply flex-none h-5 w-5 mr-1;
+  }
+}
+
+/* # post content
+================================================== */
+.post-content{
+  @apply container mx-auto w-full;
+  @apply px-2 pt-8;
+}
+.post-content-gallery{
+  @apply gap-6;
+  column-count: 4;
+
+  &>div{
+    @apply inline-block box-content;
+    @apply bg-white rounded-lg shadow-md;
+    @apply border border-elephant-300;
+    @apply m-2 p-1;
+  }
+}
+
+/* # post parallax
+================================================== */
+.post-parallax{
+  @apply pt-8;
+  &>div{
+    @apply bg-fixed bg-center bg-no-repeat bg-cover;
+    height: 300px;
+    background-image: url('https://res.cloudinary.com/miguelsmuller/image/upload/v1621902134/pmrc-site/background-praca_bbv2xc.WebP');
+  }
+}
+
+/* # post referenced
+================================================== */
+.post-referenced{
+  @apply container mx-auto w-full;
+  @apply px-2 pt-6;
+  &>div{
+    @apply rounded-md shadow-md bg-white border border-elephant-300;
+    @apply text-xs font-bold;
+    @apply p-4;
+  }
+  span{
+    @apply font-light;
+  }
+}
+
+/* # post related
+================================================== */
+.post-related{
+  @apply container mx-auto w-full;
+  @apply px-2 pt-24;
+}
+.post-related-inner{
+  @apply grid grid-cols-3;
+  @apply gap-6 py-6;
+
+  &>div{
+    @apply col-span-3 md:col-span-1 items-stretch;
+  }
+}
+.post-related-publications-card{
+  @apply flex flex-col justify-between overflow-hidden ;
+  @apply border border-elephant-300;
+  @apply rounded-md shadow-md bg-white;
+  @apply h-full p-6 pb-4;
+  @apply transition duration-300 ease-in-out;
+
+  &>*:nth-child(1){
+    @apply relative block;
+  }
+  &>*:nth-child(2){
+    @apply flex-grow overflow-ellipsis;
+    @apply text-xl sm:text-1xl leading-6 font-bold;
+    @apply py-4;
+  }
+  &>*:nth-child(3){
+    @apply text-xs;
+  }
+}
+
+/* # post coments
+================================================== */
+.post-comments{
+  @apply container mx-auto w-full px-2 pt-24;
+}
+.post-comments-inner{
+  @apply flex flex-col justify-between overflow-hidden;
+  @apply border border-elephant-300;
+  @apply transition duration-300 ease-in-out;
+  @apply rounded-md shadow-md bg-white;
+  @apply h-20 mt-6 p-6 pb-4;
+}

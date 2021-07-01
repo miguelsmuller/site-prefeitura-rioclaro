@@ -18,6 +18,8 @@ import { HomeNewsComponent } from './common/features/home-news/home-news.compone
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
 import { PostComponent } from './pages/post/post.component';
+import { NavigationComponent } from './common/components/navigation/navigation.component';
+import { NavigationToogleComponent } from './common/components/navigation/navigation-toogle/navigation-toogle.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { PostComponent } from './pages/post/post.component';
     HomeComponent,
     ContentComponent,
     PostComponent,
+    NavigationComponent,
+    NavigationToogleComponent,
   ],
   imports: [
     BrowserModule,

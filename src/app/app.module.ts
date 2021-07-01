@@ -20,6 +20,7 @@ import { ContentComponent } from './pages/content/content.component';
 import { PostComponent } from './pages/post/post.component';
 import { NavigationComponent } from './common/components/navigation/navigation.component';
 import { NavigationToogleComponent } from './common/components/navigation/navigation-toogle/navigation-toogle.component';
+import { FooterSocialComponent } from './common/components/footer/footer-social/footer-social.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { NavigationToogleComponent } from './common/components/navigation/naviga
     PostComponent,
     NavigationComponent,
     NavigationToogleComponent,
+    FooterSocialComponent,
   ],
   imports: [
     BrowserModule,

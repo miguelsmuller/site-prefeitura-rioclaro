@@ -1,0 +1,10 @@
+:host{
+  @apply block w-full h-full;
+}
+
+.social-box {
+  @apply flex-1;
+  @apply flex flex-col items-center;
+  @apply p-2 sm:p-4;
+  @apply rounded border-4;
+}

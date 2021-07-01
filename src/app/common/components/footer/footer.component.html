@@ -1,28 +1,8 @@
 <footer>
-  <div
-    class="h-56 pt-16 bg-no-repeat bg-left-bottom border-b-4 border-fruit-salad-900"
-    style="
-      background-image: url('https://res.cloudinary.com/miguelsmuller/image/upload/v1621902123/pmrc-site/church-silhouette_rr0iwk.WebP');
-    "
-  ></div>
-
-  <div class="bg-elephant-500 text-gray-50 border-t-4 border-fruit-salad-500">
-    <div
-      class="
-        container
-        mx-auto
-        w-full
-        px-2
-        gap-8
-        flex flex-row flex-wrap
-        pt-10
-        pb-2
-        sm:pb-8
-        justify-between
-        items-stretch
-      "
-    >
-      <div class="w-72">
+  <div></div>
+  <div class="container-external">
+    <div class="container">
+      <div class="column-left">
         <h2 class="text-2xl font-black">Prefeitura Municipal de Rio Claro</h2>
         <div class="py-4">
           <p>Av. João Baptista Portugal, 230</p>
@@ -35,79 +15,46 @@
         </div>
       </div>
 
-      <div class="">
+      <div class="column-middle">
         <h4 class="text-xl font-bold pb-2">Navegação Rápida</h4>
-        <ul class="space-y-2">
-          <li class="transition duration-200 ease-in-out transform hover:translate-x-1">
-            <a [routerLink]="['/content']">A Cidade de Rio Claro</a>
-          </li>
-          <li class="transition duration-200 ease-in-out transform hover:translate-x-1">
-            <a [routerLink]="['/content']">Serviços online</a>
-          </li>
-          <li class="transition duration-200 ease-in-out transform hover:translate-x-1">
-            <a [routerLink]="['/content']">Boletim Oficial</a>
-          </li>
-          <li class="transition duration-200 ease-in-out transform hover:translate-x-1">
-            <a [routerLink]="['/content']">Notícias</a>
-          </li>
-          <li class="transition duration-200 ease-in-out transform hover:translate-x-1">
-            <a [routerLink]="['/content']">Portal da Transparência</a>
-          </li>
-          <li class="transition duration-200 ease-in-out transform hover:translate-x-1">
-            <a [routerLink]="['/content']">Ouvidoria Online</a>
+        <ul class="footer-navigation">
+          <li *ngFor="let link of footerLinks">
+            <a [routerLink]="[link.path]">{{ link.title }}</a>
           </li>
         </ul>
       </div>
 
-      <div class="flex-1 md:flex-initial flex flex-col justify-between">
-        <div class="flex flex-row justify-around items-stretch space-x-2 sm:space-x-4">
-          <a
-            href="#"
-            class="flex-1 flex flex-col p-2 sm:p-4 items-center rounded border-4"
-            style="background-color: #3b5998; border-color: #2c3f69"
-          >
+      <div class="column-right">
+        <div class="column-right-line-1">
+          <app-footer-social bgColor="#3b5998" bdColor="#2c3f69" source="facebook">
             <svg class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor">
               <path style="fill: none" d="M0,0h24v24H0C0,24,0,0,0,0z" />
               <path
                 d="M13.2,6.9H16V3.5h-2.8c-2.2,0-3.9,1.8-3.9,3.9v1.7H7v3.4h2.3v9h3.4v-9h2.8L16,9.1h-3.4V7.4C12.6,7.1,12.9,6.9,13.2,6.9z"
               />
             </svg>
-            <span class="text-2xl font-bold">34569</span>
-            <span>curtidas</span>
-          </a>
+          </app-footer-social>
 
-          <a
-            href="#"
-            class="flex-1 flex flex-col p-2 sm:p-4 items-center rounded border-4"
-            style="background-color: #9e6f4f; border-color: #8d6347"
-          >
+          <app-footer-social bgColor="#9e6f4f" bdColor="#8d6347" source="uinstagram">
             <svg class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor">
               <path style="fill: none" d="M0,0h24v24H0V0z" />
               <path
                 d="M15.7,4H8.3C5.9,4,4,5.9,4,8.3v7.3C4,18.1,5.9,20,8.3,20h7.3c2.4,0,4.3-1.9,4.3-4.3V8.3C20,5.9,18.1,4,15.7,4z M12,15.5	c-2,0-3.5-1.5-3.5-3.5S10,8.5,12,8.5s3.5,1.5,3.5,3.5S14,15.5,12,15.5z M16.3,8.9c-0.6,0-1.3-0.5-1.3-1.3c0-0.6,0.5-1.3,1.3-1.3	c0.6,0,1.3,0.5,1.3,1.3C17.4,8.5,16.9,8.9,16.3,8.9z"
               />
             </svg>
-            <span class="text-2xl font-bold">45678</span>
-            <span>seguidores</span>
-          </a>
+          </app-footer-social>
 
-          <a
-            href="#"
-            class="flex-1 flex flex-col p-2 sm:p-4 items-center rounded border-4"
-            style="background-color: #b00; border-color: #a20000"
-          >
+          <app-footer-social bgColor="#b00" bdColor="#a20000" source="youtube">
             <svg class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor">
               <path style="fill: none" d="M0,0h24v24H0V0z" />
               <path
                 d="M21.1,7.4c-0.2-0.8-0.9-1.5-1.7-1.7C17.9,5.3,12,5.3,12,5.3s-5.9,0-7.4,0.4C3.8,5.9,3.1,6.6,2.9,7.4C2.5,8.9,2.5,12,2.5,12	s0,3.1,0.4,4.6c0.2,0.8,0.9,1.4,1.7,1.7c1.5,0.4,7.4,0.4,7.4,0.4s5.9,0,7.4-0.4c0.8-0.2,1.5-0.8,1.7-1.7c0.4-1.5,0.4-4.6,0.4-4.6	S21.5,8.9,21.1,7.4z M10.1,14.8V9.2l5,2.8L10.1,14.8L10.1,14.8z"
               />
             </svg>
-            <span class="text-2xl font-bold">2243</span>
-            <span>assinantes</span>
-          </a>
+          </app-footer-social>
         </div>
 
-        <div class="text-xs pt-4 text-center md:text-right">
+        <div class="column-right-line-2">
           <p>Todos os direitos reservados. Proibida a reprodução sem prévia autorização</p>
           <p>Um site desenvolvido por <a href="#" class="text-sm font-bold">Miguel Müller</a></p>
         </div>

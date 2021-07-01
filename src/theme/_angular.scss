@@ -36,4 +36,5 @@ $fruit-salad-palette: (
 $app-primary: mat-palette($elephant-palette, 500);
 $app-accent:  mat-palette($fruit-salad-palette, 500);
 $app-theme: mat-light-theme($app-primary, $app-accent);
+
 @include angular-material-theme($app-theme);

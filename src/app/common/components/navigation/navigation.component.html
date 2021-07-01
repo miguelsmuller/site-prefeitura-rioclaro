@@ -5,12 +5,14 @@
         <a [routerLink]="['/content']">Portal da Transparência</a>
       </li>
     </ul>
+
     <app-navigation-toogle [blnMenuShow]="blnMenuShow" (emtClick)="toggleMenu()"></app-navigation-toogle>
   </div>
+
   <ul [ngClass]="{ hidden: !blnMenuShow, flex: blnMenuShow }" class="md:flex navigation">
-    <li class="active"><a [routerLink]="['/content']">Inicio</a></li>
+    <li class="active"><a [routerLink]="['/']">Inicio</a></li>
     <li><a [routerLink]="['/content']">Cidade</a></li>
-    <li><a [routerLink]="['/content']">Governo, Secretarias e Órgãos</a></li>
+    <li><a [routerLink]="['/affiliate']">Governo, Secretarias e Órgãos</a></li>
     <li><a [routerLink]="['/content']">Serviços e Utilidades</a></li>
     <li><a [routerLink]="['/content']">Notícias</a></li>
     <li><a [routerLink]="['/content']">Ouvidoria</a></li>

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MaterialModule } from './material.module';
+import { AppLibrariesModule } from './app-libraries.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { NgxPictureModule, CLOUDINARY_CONFIG } from 'ngx-picture';
@@ -21,6 +21,7 @@ import { PostComponent } from './pages/post/post.component';
 import { NavigationComponent } from './common/components/navigation/navigation.component';
 import { NavigationToogleComponent } from './common/components/navigation/navigation-toogle/navigation-toogle.component';
 import { FooterSocialComponent } from './common/components/footer/footer-social/footer-social.component';
+import { AffiliateComponent } from './pages/affiliate/affiliate.component';
 
 @NgModule({
   declarations: [
@@ -36,13 +37,14 @@ import { FooterSocialComponent } from './common/components/footer/footer-social/
     NavigationComponent,
     NavigationToogleComponent,
     FooterSocialComponent,
+    AffiliateComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MaterialModule,
+    AppLibrariesModule,
     NgxPictureModule.forRoot(CLOUDINARY_CONFIG),
   ],
   providers: [],

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
 import { PostComponent } from './pages/post/post.component';
+import { AffiliateComponent } from './pages/affiliate/affiliate.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'post',
     component: PostComponent,
+  },
+  {
+    path: 'affiliate',
+    component: AffiliateComponent,
   },
 ];
 

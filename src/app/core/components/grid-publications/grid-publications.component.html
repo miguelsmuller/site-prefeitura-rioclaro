@@ -1,0 +1,25 @@
+<div class="grid-cards" *ngIf="dataSource$ | async as publications; else waiting">
+  <div *ngFor="let publication of publications">
+    <a [routerLink]="['/affiliate']">
+      <article class="grid-cards-item">
+        <header>
+          <p class="font-bold">Categoria</p>
+          <span class="absolute w-16 h-1 bg-fruit-salad-500 botton-0 left-0"></span>
+        </header>
+
+        <p [innerHTML]="publication.title.rendered | titlecase"></p>
+        <span>{{ publication.date | relativeTime }}</span>
+      </article>
+    </a>
+  </div>
+
+  <div class="load-more">
+    <button class="button-green">Carregar mais notícias</button>
+  </div>
+</div>
+
+<ng-template #waiting>
+  <div class="progress">
+    <mat-spinner mode="indeterminate" diameter="50"></mat-spinner>
+  </div>
+</ng-template>

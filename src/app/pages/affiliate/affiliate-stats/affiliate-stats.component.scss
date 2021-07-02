@@ -1,0 +1,27 @@
+:host{
+  display: block;
+}
+
+section{
+  @apply container mx-auto w-full px-2 py-16;
+  @apply flex flex-row justify-center items-center gap-6;
+
+  &>div{
+    @apply w-full md:w-4/12 lg:w-2/12;
+  }
+}
+
+.stats-card{
+  @apply flex flex-col gap-1;
+  @apply bg-elephant-500 text-gray-50;
+  @apply rounded-md;
+  @apply p-6;
+
+  h5{
+    @apply text-5xl font-bold;
+  }
+  p{
+    @apply font-bold;
+  }
+}
+

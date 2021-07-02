@@ -22,8 +22,8 @@
   </ol>
 </div>
 
-<div class="post-header">
-  <div class="post-topic">
+<section class="post-header">
+  <div class="title-section">
     <h1>Título de uma página de Notícia</h1>
     <span></span>
   </div>
@@ -54,11 +54,11 @@
       <p>371 Comentários</p>
     </div>
   </div>
-</div>
+</section>
 
 <div class="post-parallax"><div></div></div>
 
-<div class="post-content">
+<article class="post-content">
   <p class="pb-4">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut venenatis, odio id efficitur tempus, nisi diam viverra
     risus, a maximus sem velit sed felis. Mauris tortor augue, euismod et consectetur sed, cursus vitae sem. Curabitur
@@ -137,43 +137,29 @@
     risus eu, convallis justo. In rhoncus id nunc in luctus. Donec ut vulputate metus, et feugiat odio. Aenean lorem
     nulla, rhoncus eu lacus ut, pretium vestibulum eros.
   </p>
-</div>
+</article>
 
-<div class="post-referenced">
+<section class="post-referenced">
   <div>
     <span>Artigo referenciado como: </span>
     <a href="">Palavra Chave 1</a>, <a href="">Palavra Chave 2</a>,
     <a href="">Palavra Chave 3</a>
   </div>
-</div>
+</section>
 
-<div class="post-related">
-  <div class="post-topic">
+<section class="post-related">
+  <div class="title-section">
     <h1>Notícias Relacionadas</h1>
     <span></span>
   </div>
 
-  <div class="post-related-inner">
-    <div *ngFor="let publication of relatedPublications">
-      <a [routerLink]="['/post']">
-        <article class="post-related-publications-card">
-          <header>
-            <p class="font-bold">{{ publication.category }}</p>
-            <span class="absolute w-16 h-1 bg-fruit-salad-500 botton-0 left-0"></span>
-          </header>
+  <app-grid-publications></app-grid-publications>
+</section>
 
-          <p>{{ publication.title }}</p>
-          <span>{{ publication.date }}</span>
-        </article>
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="post-comments">
-  <div class="post-topic">
+<section class="post-comments">
+  <div class="title-section">
     <h1>Comentários</h1>
     <span></span>
   </div>
   <div class="post-comments-inner"></div>
-</div>
+</section>

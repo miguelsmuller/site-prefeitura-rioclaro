@@ -2,26 +2,11 @@
   display: block;
 }
 
-/* # post topic
-================================================== */
-.post-topic{
-  @apply relative pt-4 ;
-
-  h1{
-    @apply font-bold text-3xl;
-  }
-  span{
-    @apply bg-fruit-salad-500;
-    @apply w-16 h-1;
-    @apply absolute bottom-0 left-0;
-  }
-}
-
 /* # post breadcrumb
 ================================================== */
 .post-breadcrumb{
   @apply container mx-auto w-full;
-  @apply px-2 pt-8;
+  @apply px-2 pt-8 pb-8;
   ol{
     @apply list-none inline-flex overflow-hidden;
     @apply w-full;
@@ -38,11 +23,18 @@
   }
 }
 
+/* # post related
+================================================== */
+.post-related{
+  @apply container mx-auto w-full;
+  @apply px-2 pt-24;
+}
+
 /* # post header
 ================================================== */
 .post-header{
   @apply container mx-auto w-full;
-  @apply px-2 pt-2;
+  @apply px-2 py-2;
 }
 .post-header-meta{
   @apply flex flex-row flex-wrap items-center;
@@ -90,7 +82,7 @@
 /* # post parallax
 ================================================== */
 .post-parallax{
-  @apply pt-8;
+  @apply pt-6;
   &>div{
     @apply bg-fixed bg-center bg-no-repeat bg-cover;
     height: 300px;
@@ -113,44 +105,10 @@
   }
 }
 
-/* # post related
-================================================== */
-.post-related{
-  @apply container mx-auto w-full;
-  @apply px-2 pt-24;
-}
-.post-related-inner{
-  @apply grid grid-cols-3;
-  @apply gap-6 py-6;
-
-  &>div{
-    @apply col-span-3 md:col-span-1 items-stretch;
-  }
-}
-.post-related-publications-card{
-  @apply flex flex-col justify-between overflow-hidden ;
-  @apply border border-elephant-300;
-  @apply rounded-md shadow-md bg-white;
-  @apply h-full p-6 pb-4;
-  @apply transition duration-300 ease-in-out;
-
-  &>*:nth-child(1){
-    @apply relative block;
-  }
-  &>*:nth-child(2){
-    @apply flex-grow overflow-ellipsis;
-    @apply text-xl sm:text-1xl leading-6 font-bold;
-    @apply py-4;
-  }
-  &>*:nth-child(3){
-    @apply text-xs;
-  }
-}
-
 /* # post coments
 ================================================== */
 .post-comments{
-  @apply container mx-auto w-full px-2 pt-24;
+  @apply container mx-auto w-full px-2 pt-24 pb-10;
 }
 .post-comments-inner{
   @apply flex flex-col justify-between overflow-hidden;

@@ -1,0 +1,92 @@
+<section>
+  <div class="spotlight-title">
+    <h3>Secretário(a)</h3>
+    <h4>Fulano Beltrano da Silva Júnior</h4>
+  </div>
+
+  <div class="spotlight-information">
+    <ul class="spotlight-information-meta">
+      <li>
+        <svg class="h-5 w-5 mr-2.5 text-fruit-salad-500" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            fill-rule="evenodd"
+            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div>
+          <p>Avenida João Batista Portugal, 223</p>
+          <p>Centro – Rio Claro</p>
+          <p>CEP: 27.460-000</p>
+          <a href="#" class="text-xs"><small>(Ver localização)</small></a>
+        </div>
+      </li>
+      <li>
+        <svg class="h-5 w-5 mr-2.5 text-fruit-salad-500" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div>
+          <p>De segunda-feira a sexta-feira</p>
+          <p>9:00h às 16:00h</p>
+        </div>
+      </li>
+      <li>
+        <svg class="h-5 w-5 mr-2.5 text-fruit-salad-500" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+          />
+        </svg>
+        <div>
+          <p>(24) 3332-1717 / (24) 3332-1292</p>
+          Ramal: 460
+          <p></p>
+        </div>
+      </li>
+      <li>
+        <svg class="h-5 w-5 mr-2.5 text-fruit-salad-500" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+        </svg>
+        <div>
+          <a href="#">pmrc@rioclaro.rj.gov.br</a>
+        </div>
+      </li>
+    </ul>
+    <div class="spotlight-information-description">
+      <p>
+        A Secretaria Municipal de Educação é o órgão da Prefeitura responsável por elaborar a política educacional do
+        município, coordenar a sua implantação e avaliar os resultados, com o objetivo de assegurar a excelência na
+        Educação Infantil e no Ensino Fundamental Público.
+      </p>
+
+      <p>
+        Sua missão é garantir aos munícipes uma educação pública inclusiva, sustentável, democrática e participativa,
+        visando o desenvolvimento integral do ser humano e seu preparo para o exercício da cidadania.
+      </p>
+
+      <p>
+        Cabe à Secretaria Municipal de Educação cuidar das crianças e jovens da Educação Infantil (6 meses a 5 anos); do
+        Ensino Fundamental (1° ao 9° ano) e da Educação de Jovens e Adultos.
+      </p>
+
+      <p>
+        Esses cuidados devem incluir a garantia de que as crianças da Rede Pública de Educação aprendam a ler, escrever
+        e calcular com proficiência na idade certa.
+      </p>
+    </div>
+  </div>
+
+  <div class="spotlight-actions">
+    <div class="spotlight-actions-grid">
+      <div *ngFor="let action of actions">
+        <a href="#">
+          <button class="button-green">{{ action.title }}</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

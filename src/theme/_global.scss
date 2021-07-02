@@ -9,12 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.ngx-picture__picture {
-  .ngx-picture__picture__img {
-    @apply object-cover w-full rounded transition-all duration-200 ease-in-out;
-  }
-}
-
 /* # Default Button
 ================================================== */
 .button-green{

@@ -3,7 +3,7 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
 
 @Component({
   selector: 'app-root',
-  templateUrl: './shared/layout/app.component.html',
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   showLoadingIndicator = true;

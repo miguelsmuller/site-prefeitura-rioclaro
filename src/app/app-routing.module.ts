@@ -1,37 +1,31 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
-import { HomeComponent } from './pages/home/home.component';
-import { ContentComponent } from './pages/content/content.component';
-import { PostComponent } from './pages/post/post.component';
-import { AffiliateComponent } from './pages/affiliate/affiliate.component';
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
-  },
-  {
-    path: 'home',
-    component: HomeComponent,
+    loadChildren: () => import('@app/pages/home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'content',
-    component: ContentComponent,
+    loadChildren: () => import('@app/pages/content/content.module').then((m) => m.ContentModule),
   },
   {
     path: 'post',
-    component: PostComponent,
+    loadChildren: () => import('@app/pages/post/post.module').then((m) => m.PostModule),
   },
   {
     path: 'affiliate',
-    component: AffiliateComponent,
+    loadChildren: () => import('@app/pages/affiliate/affiliate.module').then((m) => m.AffiliateModule),
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules,
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

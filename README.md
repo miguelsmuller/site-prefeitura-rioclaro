@@ -4,6 +4,20 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/miguelsmuller/pmrc-site?style=flat-square)
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/miguelsmuller/pmrc-site/master?style=flat-square)
 
+<br>
+
+* [Overview](#overview)
+  * [DevTools LightHouse Score](#devtools-lighthouse-score)
+* [Development](#development)
+  * [Project Requirements](#project-requirements)
+  * [Running Locally](#running-locally)
+  * [Project Workflow](#project-workflow)   
+  * [Contributing](#contributing)
+  * [Deploy](#deploy)   
+  * [Changelog](#changelog)  
+
+<br>
+
 ## **OVERVIEW**
 Implementation of the UI redesign that was presented at [**Behance**](https://www.behance.net/gallery/80414855/Redesign-Rio-Claro-City-Hall-Website) developed for study purposes for Rio Claro City Hall in the State of Rio Janeiro. The original site done in [**WordPress**](https://wordpress.org/) and is online at [**rioclaro.rj.gov.br**](https://rioclaro.rj.gov.br/) and  the new concept being developed in **[Angular](https://angular.io/)** and you can see the redesign version [**here**](https://miguelsmuller.github.io/pmrc-site/).
 
@@ -13,19 +27,16 @@ Implementation of the UI redesign that was presented at [**Behance**](https://ww
 - **License:** Proprietary - Private Use - All rights reserved. 
 - **Available for consultation and study only**
 
-## **DOC CONTENT** 
-* [Project Requirements](#project-requirements)
-* [Running Locally](#running-locally)
-* [Project Workflow](#project-workflow)   
-* [Contributing](#contributing)
-* [Deploy](#deploy)   
-* [Changelog](#changelog)  
+<br>
+
+### **DEVTOOLS LIGHTHOUSE SCORE** 
+![Score DevTools LightHouse](docs/score-devtools-lighthouse.png "Score DevTools LightHouse")
 
 <br>
 
-# **DEVELOPMENT AND OPERATION**  
-## **PROJECT REQUIREMENTS**  
-### **INSTALL ALL DEPENDENCIES**
+## **DEVELOPMENT**  
+### **PROJECT REQUIREMENTS**  
+#### **INSTALL ALL DEPENDENCIES**
 Make sure that you also have **[NodeJS](https://nodejs.org/)** and **[NPM](https://www.npmjs.com/)** installed on your computer.
 - **`$ node --version`** 
 - **`$ npm --version`** 
@@ -38,13 +49,13 @@ Install dependencies of project with:
 
 <br>
 
-## **RUNNING LOCALLY**  
+### **RUNNING LOCALLY**  
 Run te command  
 **`$ ng serve`**
 
 <br>
 
-## **PROJECT WORKFLOW**  
+### **PROJECT WORKFLOW**  
 This workflow uses two main branches to record the project's history. The **`master`** branch stores the official release history, and the **`develop`** branch serves as a resource integration branch.
 
 The branch **`master`** is the branch that runs in the production environment. All commits on the **`master`** branch must have a version number.
@@ -55,7 +66,7 @@ The branch **`develop`** is the branch that runs in the test environment. It sto
 
 <br>
 
-## **CONTRIBUTING**  
+### **CONTRIBUTING**  
 #### **REPORTING PROBLEMS**  
 To report an issue, please [create a new pull request](https://github.com/miguelsmuller/pmrc-site/pulls).  
 
@@ -78,7 +89,7 @@ Before sending your collaboration, check your code and the conventions adopted i
 
 <br>
 
-## **DEPLOY**  
+### **DEPLOY**  
 Provisionally while the site is not in production the depoly will be done on github pages for being a free and easy to use alternative to host our website.
 - Generate production version with -  **`$ npm run build:prod`**
   - A folder will be created in the same directory as the current project 
@@ -94,7 +105,7 @@ Provisionally while the site is not in production the depoly will be done on git
 
 <br>
 
-## **CHANGELOG**  
+### **CHANGELOG**  
 = **1.1.0 - 19/05/2021** =  
 New version using Angular
 

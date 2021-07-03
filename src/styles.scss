@@ -1,5 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+:root {
+  --default-side-space: 1.5rem;
+}
+
 @import 'theme/angular';
 @import 'theme/global';

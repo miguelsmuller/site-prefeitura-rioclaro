@@ -11,6 +11,6 @@ import { GridPublicationsComponent } from './components/grid-publications/grid-p
 @NgModule({
   imports: [CommonModule, HttpClientModule, LibrariesModule, LayoutModule],
   declarations: [RelativeTimePipe, GridPublicationsComponent],
-  exports: [HttpClientModule, LibrariesModule, LayoutModule, RelativeTimePipe, GridPublicationsComponent],
+  exports: [CommonModule, HttpClientModule, LibrariesModule, LayoutModule, RelativeTimePipe, GridPublicationsComponent],
 })
 export class CoreModule {}

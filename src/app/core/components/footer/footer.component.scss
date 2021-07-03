@@ -3,10 +3,12 @@
 }
 
 footer {
-  &>div:first-child { /* silhueta da igreja */
+  &::before{
     @apply h-56 pt-16;
     @apply border-b-4 border-fruit-salad-900;
     @apply bg-no-repeat bg-left-bottom;
+    content: '';
+    display: block;
     background-image: url('https://res.cloudinary.com/miguelsmuller/image/upload/v1621902123/pmrc-site/church-silhouette_rr0iwk.WebP');
   }
 
@@ -17,7 +19,9 @@ footer {
     .container {
       @apply container mx-auto w-full;
       @apply flex flex-row flex-wrap justify-between items-stretch gap-8;
-      @apply px-2 pt-10 pb-2 sm:pb-8
+      @apply pt-10 pb-2 sm:pb-8;
+      padding-left: var(--default-side-space);
+      padding-right: var(--default-side-space);
     }
   }
 }

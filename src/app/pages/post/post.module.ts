@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { PostComponent } from './post.component';
-
 import { CoreModule } from '@core/core.module';
+
+import { PostComponent } from './post.component';
 
 @NgModule({
   imports: [

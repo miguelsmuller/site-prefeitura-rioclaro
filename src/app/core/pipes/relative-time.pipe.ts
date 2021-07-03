@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'relativeTime',
 })
 export class RelativeTimePipe implements PipeTransform {
-  transform(value: string, ...args: unknown[]): unknown {
+  transform(value: string): unknown {
     if (value) {
       const differenceInSeconds = Math.floor((+new Date() - +new Date(value)) / 1000);
 

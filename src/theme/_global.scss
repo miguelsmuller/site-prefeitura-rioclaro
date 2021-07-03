@@ -12,10 +12,10 @@ html {
 /* # Default Button
 ================================================== */
 .button-green{
-  @apply flex items-center justify-center px-8 py-4 rounded text-sm font-semibold border-transparent text-center bg-fruit-salad-500 text-white border transition duration-300 ease-in-out;
+  @apply flex items-center justify-center px-8 py-4 rounded text-sm font-semibold border-transparent text-center bg-fruit-salad-700 text-white border transition duration-300 ease-in-out;
 
   &:hover{
-    @apply hover:bg-fruit-salad-700;
+    @apply hover:bg-fruit-salad-500;
   }
 
   &:focus{

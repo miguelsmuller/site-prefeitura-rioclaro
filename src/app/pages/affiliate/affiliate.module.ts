@@ -14,6 +14,11 @@ import { AffiliateStatsComponent } from './affiliate-stats/affiliate-stats.compo
       {
         path: '',
         component: AffiliateComponent,
+        data: {
+          title: 'Afiliada',
+          description: '',
+          robots: 'index, follow',
+        },
       },
     ]),
   ],

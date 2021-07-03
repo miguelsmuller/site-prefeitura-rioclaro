@@ -14,6 +14,11 @@ import { HomeNewsComponent } from './home-news/home-news.component';
       {
         path: '',
         component: HomeComponent,
+        data: {
+          title: 'Página Inicial',
+          description: '',
+          robots: 'index, follow',
+        },
       },
     ]),
   ],

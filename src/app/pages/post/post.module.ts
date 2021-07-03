@@ -12,6 +12,11 @@ import { PostComponent } from './post.component';
       {
         path: '',
         component: PostComponent,
+        data: {
+          title: 'Publicação',
+          description: '',
+          robots: 'index, follow',
+        },
       },
     ]),
   ],

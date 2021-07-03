@@ -12,6 +12,11 @@ import { ContentComponent } from './content.component';
       {
         path: '',
         component: ContentComponent,
+        data: {
+          title: 'Conteudo',
+          description: '',
+          robots: 'index, follow',
+        },
       },
     ]),
   ],
